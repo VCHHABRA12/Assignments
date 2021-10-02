@@ -1,0 +1,87 @@
+1.	For the given JSON iterate over all for loops (for, for in, for of, forEach)
+
+(A)	For in loop:
+
+var jsonObj ={"name":"vaibhav", "age": "24" };
+
+for (const key in jsonObj) {
+    console.log(`${key}: ${jsonObj[key]}`);
+} 
+
+
+(B)	For each loop:
+var jsonObj ={"name":"vaibhav", "age": "24" };
+const x = Object.keys(jsonObj);
+
+x.forEach((x, index) => {
+    console.log(`${x}: ${jsonObj[x]}`);
+});
+
+(C) For of loop
+var jsonObj ={"name":"vaibhav", "age": "24" };
+ 
+
+for (const [x, y] of Object.entries(jsonObj)) {
+    console.log(`${x}: ${y}`);
+}	
+
+(D) For loop:
+var jsonObj ={"name":"vaibhav", "age": "24" };
+var arr= Object.entries(jsonObj);
+
+for(var i=0; i <arr.length; i++ ){
+    
+    console.log(arr[i]);
+    
+}
+
+
+
+2.	Resume data in JSON format
+var jsonObj ={
+  "Resume": {
+    "name": "Vaibhav Chhabra",
+    "email": "vaibhavchhabra97@gmail.com",
+    "phone": "(+91) 9650884191",
+    "location": {
+      "address": "G-7 Jagatpuri",
+      "postalCode": "110051",
+      "city": "Delhi",
+      "countryCode": "IN",
+      },
+  "work": {
+    "name": "Bravura Solutions",
+    "position": "Junior Developer",
+  },
+
+  "education": {
+    "institution": "GGSIPU University",
+    "branch": "Information Technology",
+    "grad": "Bachelor",
+    "score": "7.7",
+    
+  },
+
+  "skills": {
+    "name": "AS400 Developer",
+    "1": "RPGLE",
+    "2":  "CLLE",
+    "3":  "SQL",
+    "4":  "RPG",
+    "5":  "CLP"
+  },
+  
+  "languages": {
+    "language": "English, Hindi",
+    "fluency": "Native speaker"
+  },
+  
+  "hobbies": {
+      "1": "Dancing",
+      "2":"Gymming"}
+  
+      }};
+
+  
+
+
