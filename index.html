@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      /* internal css goes in the head section of HTML */
+
+      .main{
+          max-width:600px ;
+          
+          border: 5px solid black; /*border */
+          
+          
+      }
+
+      h1 {
+            background-color: red;
+            color:white;
+            margin-left: 5px;
+            margin-right: 5px;
+         }
+        .body-main{
+          margin-left:20px;
+          margin-bottom: 10px;
+        }
+
+     #f2{
+         margin-left: 110px;
+     }
+     #state1,#zip1{
+         margin-left: 150px;
+     }
+
+     .subscribeclass{
+         margin-top: 10px;
+         font-weight: bold;
+     }
+     .sendclass{
+         margin-top: 10px;
+         font-weight: bold;
+     }
+     .Ans8{
+      max-width:500px ;
+     }
+     .Ans8table,td{
+      border: 1px solid black;
+      border-collapse: collapse;
+      text-align: center;
+      margin: auto;
+      padding: 10px;
+     }
+
+
+     .contactus{
+      max-width:800px ;
+      border: 1px solid  black; /*border */
+      text-align: center;  
+      background-color: lightgoldenrodyellow; 
+      color: darkblue ;
+    
+      font-weight: bold;
+      
+     }
+     #f3name,#f3{
+       display: inline-block;
+       flex-direction: row;
+      text-align: center;
+      margin-bottom: 10px;
+      margin-left: 10px;
+     }
+
+     .class7{
+            border-top-style: hidden;
+            border-right-style:hidden ;
+            border-left-style: hidden;
+     }
+
+     
+
+     
+      
+
+      </style>
+
+      
+    <title>Document</title>
+</head>
+<body>
+
+  <p> Ans.1</p>
+  <p>Body tag is started before head tag</p>
+
+  <p> Ans.2</p>
+  <p>1.Body tag is started before head tag</p>
+  <p>2. Title tag is not closed</p>
+
+  <p> Ans.3</p>
+  <div class="contactus">
+  <p><b>Contact Us </b></p>
+  <p>Got a Question ? Send us a message and we'll respond as soon as possible.</p>
+  <form class="form1">
+  <input 
+          type="text"
+          name="fname"
+          id="f3name"
+          placeholder="Enter your full name"/>
+          <br>
+
+    <input 
+          type="text"
+          name="email"
+          id="f3" placeholder="Enter your email"/>
+          <br>
+          <textarea rows="5" cols="40" name="text" placeholder="Enter your message"></textarea>      
+      <br>
+      <input type="submit" value="submit"/>    
+
+
+  </form>      
+  
+
+</div>
+
+
+  <p> Ans.4</p>
+  <ul style="list-style-type:disc;">
+    <li>Programming Language</li>
+    <ul style="list-style-type:circle;">
+      <li>JavaScript</li>
+      <ol type="a">
+        <li>Angular</li>
+        <li>React</li>
+        <li>Vue.js</li>
+      </ol>
+
+      <li>Python</li>
+      <ol type="a">
+        <li>Django Framework</li>
+        <li>Flask Framework</li>
+      </ol>
+        
+      <li>Java</li>
+      <ol type="a">
+        <li>Spring</li>
+        <li>Heaven</li>
+        <li>Hibernate</li>
+      </ol>
+  </ul>
+    <li>Database</li>
+      <ul style="list-style-type:circle;">
+          <li>MySQL</li>
+          <li>MongoDB</li>
+          <li>Cansandra</li>
+      </ul>
+  </ul>  
+
+
+  <p> Ans.5</p>
+  <a href="https://google.com" target="_blank">Click me to open Google in new tab</a>
+
+
+
+  <p> Ans.6</p>
+  <p>Employee Type:</p>
+        <input type="radio" value="salary" >
+        <label for="salary">Salaried</label>
+        <input type="radio" value="">
+        <label for="salary">Own business</label>
+
+
+
+  <p> Ans.7</p>
+  <div class="main">
+        <h1>Yes! I want to subscribe to <i>Mag-O-Zine</i></h1>
+        
+        <div class="body-main">
+        <div class="first">
+          <input 
+          type="text"
+          name="fname"
+          id="fname"
+          class="class7"
+          style="font-style: italic"
+          />
+          
+          <input 
+          type="text"
+          name="lname"
+          class="class7"
+          id="lname"
+          style="font-style: italic"
+          />
+        </div>
+        <!-- first name -->
+        <label for="fname" id="f1"> First Name</label>
+        <!-- Last name -->
+        <label for="lname" id="f2"> Last Name</label>
+
+        <div class="Second">
+            <input 
+          type="text"
+          name="Address"
+          id="Addr"
+          class="class7"
+          style="font-style: italic"
+          />
+        </div>
+        <!-- Address -->
+        <label for="Address" id="addr1"> Address</label>
+
+
+       <div class="Third">
+          <input 
+          type="text"
+          name="city"
+          id="city"
+          class="class7"
+          style="font-style: italic"
+          />
+          
+          <input 
+          type="text"
+          name="state"
+          id="state"
+          class="class7"
+          style="font-style: italic"
+          />
+
+          <input 
+          type="text"
+          name="zip"
+          id="zip"
+          class="class7"
+          style="font-style: italic"
+          />
+        </div>
+        <!-- city -->
+        <label for="city" id="city1"> City</label>
+        <!-- state -->
+        <label for="state" id="state1"> State</label>
+        <!-- zip -->
+        <label for="zip" id="zip1"> Zip</label>
+
+        <div class="subscribeclass">
+            <label for="subscribe1"> Subscribe for:</label>
+            <input type="checkbox" name="subscribe1" value="cricket">1 Year($19.95)
+      <input type="checkbox" name="subscribe2" value="tennis">2 Year($35.00)
+        </div>
+
+        <div class="sendclass">
+            <label for="subscribe1"> Send me more information about:</label><br>
+            <input type="checkbox" name="subscribe1" value="cricket">Computing-Zine<br>
+            <input type="checkbox" name="subscribe2" value="tennis">Fishing-Zine<br>
+            <input type="checkbox" name="subscribe2" value="tennis">Cat-O-Zine<br>
+        </div>
+      </div>
+    </div>  
+
+    <p> Ans.8</p>
+    <div class="Ans8">
+    <p style="text-align: center"> Health Chart</p>
+    <!-- table -->
+      <table class="Ans8table">
+        <thead></thead>
+        <tr>
+          <td style="border-bottom-color:white">State of Health</th>
+          <td colspan="2">Fasting Value</th>
+
+          <td>After Eating</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td ></td>
+          <td>Minimum</td>
+          <td>Maximum</td>
+          <td>2 hours after eating</td>
+        </tr>
+        <tr>
+          <td>Healthy</td>
+          <td>70</td>
+          <td>100</td>
+          <td>Less than 140</td>
+        </tr>
+        <tr>
+          <td>Pre-Diabetes</td>
+          <td>101</td>
+          <td>126</td>
+          <td>140 to 200</td>
+        </tr>
+        <tr>
+          <td>Diabetes</td>
+          <td>More than 126</td>
+          <td>N/A</td>
+          <td>More than 200</td>
+        </tr>
+      </tbody>
+
+        
+      </table>
+    </div>
+
+    <p> Ans.9</p>
+    <p>All form elements example</p>
+    <p>1</p>
+    <label for="fname">First name:</label>
+<input type="text" id="fname" name="fname">
+<p>2</p>
+<label for="cars">Choose a car:</label>
+<select id="cars" name="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+</select>
+<p>3</p>
+<label for="cars">Choose a car:</label>
+<select id="cars" name="cars" size="3">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+</select>
+<p>4</p>
+<label for="cars">Choose a car:</label>
+<select id="cars" name="cars" size="4" multiple>
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+</select>
+<p>5</p>
+<textarea name="message" rows="10" cols="30">
+  The cat was playing in the garden.
+  </textarea>
+  <p>6</p>
+  <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+
+  <p>7</p>
+  <form action="/action_page.php">
+    <fieldset>
+      <legend>Personalia:</legend>
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" value="John"><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname" value="Doe"><br><br>
+      <input type="submit" value="Submit">
+    </fieldset>
+  </form>
+  <p>8</p>
+  <form action="/action_page.php">
+    <input list="browsers">
+    <datalist id="browsers">
+      <option value="Internet Explorer">
+      <option value="Firefox">
+      <option value="Chrome">
+      <option value="Opera">
+      <option value="Safari">
+    </datalist>
+  </form>
+  <p>9</p>
+  <form action="/action_page.php"
+  oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range"  id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
+  <input type="submit">
+</form>
+
+
+    <p> Ans.10</p>
+    <mark>HTML & CSS is awesome</mark>
+      
+
+
+</body>
+</html>
